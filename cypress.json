@@ -1,0 +1,9 @@
+{
+  "baseUrl": "https://www.yemeksepeti.com",
+  "pageLoadTimeout": 60000,
+  "execTimeout": 60000,
+  "requestTimeout": 5000,
+  "responseTimeout": 30000,
+  "chromeWebSecurity": false,
+  "testFiles": "**/*.feature"
+}
