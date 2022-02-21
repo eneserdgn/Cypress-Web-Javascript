@@ -27,7 +27,9 @@ Install project dependencies with: npm i
 ## 🚀 Run Project
 
 Run with chrome: npm run cy:chrome
+
 Run with firefox: npm run cy:firefox
+
 Run with parallel: npm run cy:parallel
 
 ## 🚀 Generate Report
