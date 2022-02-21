@@ -1,6 +1,10 @@
-const cucumberHtmlReports = require("multiple-cucumber-html-reporter")
+const cucumberHtmlReports = require("cucumber-html-reporter")
 
-cucumberHtmlReports.generate({
+const options = {
+    theme: 'hierarchy',
+    reportSuiteAsScenarios: true,
+    scenarioTimestamp: true,
+    launchReport: true,
     jsonDir: "cypress/cucumber-json",
     reportPath: "./reports/cucumber-htmlreport.html",
     openReportInBrowser: true,
@@ -15,4 +19,6 @@ cucumberHtmlReports.generate({
             version: "Catalina",
         },
     },
-});
+};
+
+cucumberHtmlReports.generate(options);
