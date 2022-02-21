@@ -6,7 +6,14 @@
   "scripts": {
     "delete:reports": "rm cypress/cucumber-json/* || true",
     "create:reports": "node cucumber-html-reports.js",
-    "cypress:open": "npx cypress open"
+    "cy:open": "npx cypress open",
+    "cy:chrome": "npx cypress run --browser chrome || npm run create:reports",
+    "cy:firefox": "npx cypress run --browser firefox || npm run create:reports",
+    "cy:tag": "npx cypress run run -e TAGS='@FalseMail'",
+    "cy:parallel": "npx cypress run --parallel --record --browser chrome",
+    "cy:run": "cypress run",
+    "cy:parallel" : "cypress-parallel -s cy:run -t 2"
+
   },
   "author": "",
   "license": "ISC",
@@ -15,6 +22,7 @@
   },
   "dependencies": {
     "cypress-cucumber-preprocessor": "^4.3.1",
+    "cypress-parallel": "^0.9.0",
     "multiple-cucumber-html-reporter": "^1.19.0"
   },
   "cypress-cucumber-preprocessor": {
