@@ -26,6 +26,8 @@ Install project dependencies with: npm i
 
 ## 🚀 Run Project
 
+Run with cypress dashboard: npm run cy:open
+
 Run with chrome: npm run cy:chrome
 
 Run with firefox: npm run cy:firefox
