@@ -1,5 +1,4 @@
-# Project exclude paths
 /node_modules/
 /reports/*
-/cypress/cucumber-json/*
-/package-lock.json
+/package-lock.json/
+/.idea/
